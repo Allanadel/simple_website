@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+   
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    height: 60px;
+    z-index: 1000;
+}
+.container{
+    
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    
+    justify-content: space-between;
+}
+.navbar a{
+    padding: 20px 0;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+.nav-links{
+    gap: 20px;
+    list-style: none;
+}
+.navbar a:hover {
+    color: #7c7a7a;
+}
+
+/*homepage*/
+
+.homepage{
+    position: relative;
+    height:100vh;
+    width: 100%;
+    padding-top: 60px;
+    box-sizing: border-box;
+    
+}
+.homepage::before{
+    content:" ";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.homepage .content{
+    background: url(images/pexels-kelly-1179532-2688664.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.homepage .text{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.homepage .text h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.homepage a{
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: 0.3s;
+}
+.homepage a:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    
+}
+
+/*services*/
+section{
+    padding-top:80px;
+}
+.section-title{
+    text-align: center;
+}
+.section h2{
+    font-size: 2rem;
+    color: white;
+}
+.services h3{
+    font-size: 1.5rem;
+    color: white;
+    text-transform:uppercase;
+}
+.cards{
+    margin-top: 50px;
+      flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .card{
+    width: calc(100% / 3 - 100px);
+    text-align: center;
+    list-style: none;
+    background-color:#686666;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+    transition: 0.5s;
+  cursor: pointer;
+    
+}
+.services .card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+
+}
+.services .card img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    
+}
+.services .card p{
+    margin-top: 5px;
+    color: white;
+  
+}
+
+
+/* Portifolio */
+.portfolio .card{
+    width: calc(100% / 3 - 100px);
+    padding: 0 0 2px;
+     text-align: center;
+    list-style: none;
+    background-color: #777;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+    
+}
+.portfolio .card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+
+}
+.portfolio .card img{
+    height: 150px;
+    width: 260px;
+    border-radius: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.portfolio .card p{
+    margin-top: 5px;
+    color: white;
+  
+}
+.portfolio h3{
+    font-size: 1.5rem;
+    color: white;
+    text-transform:uppercase;
+}
+
+/*About Us
+
+.about .company-info{
+    margin-top: 30px;
+   
+}
+.about row{
+    padding:0 10px;
+}
+.about h3{
+    margin: 30px 0 10px;
+}
+.about ul{
+    padding-left: 20px;
+}
+
+*/
+ 
+.about {
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.section-title p {
+    color: #777;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.company-info {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.company-info h3 {
+    font-size: 1.8rem;
+    color: #444;
+    margin: 40px 0 20px;
+}
+.company-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Team Hierarchy Styling */
+.team {
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.team ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+}
+
+.team li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+}
+
+/* Team member images */
+.team li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+/* CEO Positioning */
+.team li:first-child {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+/* Vice CEO Positioning */
+.team li:nth-child(2) {
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+/* Camp Manager (Left) */
+.team li:nth-child(3) {
+    top: 300px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+/* Gear Specialist (Right) */
+.team li:nth-child(4) {
+    top: 300px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+/* Connecting lines */
+.team li:first-child::after {
+    content: '';
+    position: absolute;
+    background: #ddd;
+    width: 2px;
+    height: 40px;
+    bottom: -50px;
+    left: 50%;
+}
+
+.team li:nth-child(2)::before,
+.team li:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    background: #ddd;
+    width: 2px;
+    height: 40px;
+    bottom: -50px;
+    left: 50%;
+}
+
+.team li:nth-child(2)::after {
+    width: 40%;
+    height: 2px;
+    bottom: -50px;
+    left: 30%;
+    transform: translateY(50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .team li {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        width: 100%;
+    }
+    
+    .team li::after,
+    .team li::before {
+        display: none;
+    }
+}
+
+/* Contact */
+.contact .row{
+    margin: 60px 0 90px;
+}
+.contact .row .col{
+    padding: 0 10px;  
+}
