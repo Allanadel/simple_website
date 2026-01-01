@@ -71,7 +71,7 @@ header{
     background: rgba(0, 0, 0, 0.2);
 }
 .homepage .content{
-    background: url(images/pexels-kelly-1179532-2688664.jpg);
+    background: url(images/pexels-pixabay-45241.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -362,4 +362,5 @@ section{
 }
 .contact .row .col{
     padding: 0 10px;  
+
 }
